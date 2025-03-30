@@ -12,8 +12,8 @@ body{
     justify-content: center;
 }
 .todoList{
-    width:80%;
-    height: 200px;
+    width:70%;
+    height: 80%;
     align-items: center;
     background-color: #252323;
     margin: 20px;
@@ -27,20 +27,37 @@ body{
 .row{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background: #3f3d3d;
-    padding: 15px;
-    margin-bottom: 25px;
-    border-radius: 10px;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    height: 6vh;
 }
 input{
     flex: 1;
-    padding: 10px;
-    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    background: transparent;
+    color: #ffffff;
+    font-weight: bold;
+}
+button{
     border: none;
     outline: none;
-    background: transparent;
+    border-radius: 30px;
+    height: 100%;
+    width:20%;
+    color: white;
     font-weight: bold;
-    font-size: 12px;
+    background-color: #22c922;
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 10px;
+    user-select: none;
+    cursor: pointer;
     color: white;
 }

@@ -1,0 +1,46 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    background: linear-gradient(135deg, #000000, #515151); ;
+    width:100%;
+    min-height:100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.todoList{
+    width:80%;
+    height: 200px;
+    align-items: center;
+    background-color: #252323;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.todoList h2{
+    text-align: center;
+    color: white;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3f3d3d;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+input{
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+}

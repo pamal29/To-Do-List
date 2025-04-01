@@ -3,6 +3,73 @@ body{
     padding:0;
     box-sizing: border-box;
 }
+.neon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.neon ul {
+    display: flex;
+    gap: 20px; /* Space between circles */
+    padding: 0;
+}
+
+.neon li {
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Makes them round */
+    animation: glow 1.6s ease-in-out infinite;
+}
+
+/* Neon glow effect */
+@keyframes glow {
+    0%, 40%, 100% {
+        transform: scale(0.5);
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    }
+    20% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+}
+
+.neon li:nth-child(1) {
+    animation-delay: -1.4s;
+    background: yellow;
+    box-shadow: 0 0 15px yellow, 0 0 30px yellow;
+}
+
+.neon li:nth-child(2) {
+    animation-delay: -1.2s;
+    background: red;
+    box-shadow: 0 0 15px red, 0 0 30px red;
+}
+
+.neon li:nth-child(3) {
+    animation-delay: -1s;
+    background: blue;
+    box-shadow: 0 0 15px blue, 0 0 30px blue;
+}
+
+.neon li:nth-child(4) {
+    animation-delay: -0.8s;
+    background: white;
+    box-shadow: 0 0 15px white, 0 0 30px white;
+}
+
+.neon li:nth-child(5) {
+    animation-delay: -0.6s;
+    background: cyan;
+    box-shadow: 0 0 15px cyan, 0 0 30px cyan;
+}
+
+.neon li:nth-child(6) {
+    animation-delay: -0.4s;
+    background: magenta;
+    box-shadow: 0 0 15px magenta, 0 0 30px magenta;
+}
 .container{
     background: linear-gradient(135deg, #000000, #515151); ;
     width:100%;
@@ -10,9 +77,11 @@ body{
     padding: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .todoList{
-    width:70%;
+    width:50%;
     height: 80%;
     align-items: center;
     background-color: #252323;
@@ -53,7 +122,7 @@ button{
     background-color: #22c922;
     cursor: pointer;
 }
-ul li{
+.todoList ul li{
     list-style: none;
     font-size: 20px;
     padding: 10px  10px 10px 40px;
@@ -62,7 +131,7 @@ ul li{
     color: white;
     position: relative;
 }
-ul li::before{
+.todoList ul li::before{
     content: "";
     position: absolute;
     height: 28px;

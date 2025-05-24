@@ -143,3 +143,10 @@ button{
     left: 0;
     bottom: 6px;
 }
+.todoList ul li.checked{
+    color: yellow;
+    text-decoration: line-through;
+}
+.todoList ul li.checked::before{
+
+}

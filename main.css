@@ -148,5 +148,21 @@ button{
     text-decoration: line-through;
 }
 .todoList ul li.checked::before{
+    background-image: url("pictures/checked-tick-svgrepo-com.png");
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 40px;
+    text-align: center;
+    text-weight: bold;
+}
 
+ul li span:hover{
+    background: #ec0c0c;
 }

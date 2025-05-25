@@ -137,14 +137,14 @@ button{
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background-image: url(pictures/radio-unchecked.png);
+    background-image: url("pictures/radio-unchecked.png");
     background-size: cover;
     background-position: center;
     left: 0;
     bottom: 6px;
 }
 .todoList ul li.checked{
-    color: yellow;
+    color: #d7d7c9;
     text-decoration: line-through;
 }
 .todoList ul li.checked::before{
